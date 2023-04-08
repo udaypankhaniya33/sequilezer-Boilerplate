@@ -1,0 +1,40 @@
+{
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-validation": "^4.1.0",
+    "faker": "^5.5.3",
+    "joi": "^17.9.1",
+    "momment": "^0.0.1",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.2.0",
+    "nodemon": "^2.0.22",
+    "sequelize": "^6.30.0",
+    "sequelize-automate": "^1.2.2",
+    "sharp": "^0.32.0"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "nodemon server.js",
+    "model:generate": "npx sequelize-cli model:generate --name",
+    "db:migrate": "npx sequelize-cli db:migrate",
+    "db:migrate:undo": "npx sequelize-cli db:migrate:undo",
+    "db:migrate:undo:all": "npx sequelize-cli db:migrate:undo:all",
+    "seed:generate": "npx sequelize-cli seed:generate --name",
+    "db:seed:all": "npx sequelize-cli db:seed:all",
+    "db:seed:undo": "npx sequelize-cli db:seed:undo",
+    "inits": "npx sequelize init ",
+    "db:seed:undo:all": "npx sequelize-cli db:seed:undo:all"
+  },
+  "name": "sequilezer",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.78.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "description": ""
+}
