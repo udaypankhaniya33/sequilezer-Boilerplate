@@ -167,7 +167,7 @@ const   selectWithJoins = async(tableName, joinTables = [], whereClause = {}, at
   }
   // Build the join query
   joinTables.forEach(({ table, alias, onClause }) => {
-    const joinedModel = sequelize.models[table]
+    const joinedModel = db[table]
     options.include = options.include || []
     options.include.push({
       model: joinedModel,
