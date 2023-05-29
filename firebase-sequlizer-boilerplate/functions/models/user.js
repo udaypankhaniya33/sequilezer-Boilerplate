@@ -1,0 +1,60 @@
+
+
+
+
+module.exports ={
+    userId:0,
+    token: "",
+    fullName: "",
+    firstName: "",
+    lastName:"",
+    email:"",
+    password: "",
+    mobileNumber: "",
+    is_driver: 0 , //0 = user 1 = driver
+    is_requested: 0, // 0 = none , 1 = pending ,2 = approved ,3 = rejected
+    bankDetailVerification:0,// 0 = none , 1 = pending ,2 = approved ,3 = rejected
+    bankDetailRejectionReason:"",
+    requestTime: "",
+    created: "",
+    delete: 0,
+    isVerified: 0,
+    block: 0,
+    status: 0,
+    updated: "",
+    rejectionReason: "",
+    document:"",
+    dob: "",
+    bio:"",
+    city: "",
+    walletAmount: 0,
+    withdrawAmount: 0,
+    orderCount: 0,
+    orderRating: 0,
+    bankName:"",
+    accountName: "",
+    accountNumber: "",
+    ifscCode: "",
+    otp: "",
+    level:"",
+    profilePicture: "",
+    cacheImage: "",
+    licenceFile:"",
+    insuranceFile:"",
+    rcBookFile: "",
+    avgRating: 0,
+    totalRating:0,
+    deleteBy: 0,
+    regOs:  "" ,//'ANDROID', 'IOS', 'ADMIN',
+    regOsVersion: "",
+    regDevice: "",
+    loginOs: "",
+    loginOsVersion: "",
+    loginDevice: "",
+
+    registeredAppVersion: "",
+    loginAppVersion: "",
+    latitude: 0,
+    longitude: 0,
+  };
+

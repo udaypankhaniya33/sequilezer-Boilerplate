@@ -1,0 +1,4 @@
+selectWithJoins('users', [
+    { table: 'orders', alias: 'o', onClause: { '$o.userId$': { '$users.id$': Sequelize.col('id') } } },
+    { table: 'products', alias: 'p', onClause: { '$o.productId$': { '$p.id$': Sequelize.col('id') } } }
+], { '$p.name$': { [Sequelize.Op.like]: '%Shoes%' } }, ['id', 'name', 'p.name'], [['name', 'ASC']], 10)
